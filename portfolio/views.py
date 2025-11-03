@@ -23,7 +23,7 @@ def home(request:HttpRequest):
         "chat_id": CHAT_ID,
         "text": message
      }
-        response = requests.post(url, json=payload)
+        requests.post(url, json=payload)
         return render(request=request, template_name="index.html")
     
 def components(requests:HttpRequest):
