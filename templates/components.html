@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,9 +9,9 @@
    <meta name="author" content="Devcrud">
    <title>Meyawo Landing page | Components</title>
    <!-- font icons -->
-   <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+   <link rel="stylesheet" href='{% static "vendors/themify-icons/css/themify-icons.css" %}'>
    <!-- Bootstrap + Steller  -->
-   <link rel="stylesheet" href="assets/css/meyawo.css">
+   <link rel="stylesheet" href='{% static "css/meyawo.css" %}'>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
       <div class="header-title">Components</div>
       <nav aria-label="breadcrumb">
          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href='{% url "home" %}'>Home</a></li>
             <li class="breadcrumb-item active" aria-current="page">Components</li>
          </ol>
       </nav>
@@ -943,8 +944,8 @@
    </div> <!-- end of page footer -->
 
    <!-- core  -->
-   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+   <script src='{% static "vendors/jquery/jquery-3.4.1.js" %}'></script>
+   <script src='{% static "vendors/bootstrap/bootstrap.bundle.js" %}'></script>
 
 </body>
 
